@@ -20,6 +20,7 @@ abstract class Model {
         private val TAG = Model::class.java.simpleName
 
         val MODELS = listOf(
+            OPPO,
         )
         val MODEL_COMPANY_IDS = MODELS.map { it.companyId }.toSet()
         val MODEL_AT_COMMAND_EVENTS = MODELS.map { it.atCommandEvent }.toSet()
