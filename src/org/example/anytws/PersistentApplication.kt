@@ -10,6 +10,8 @@ class PersistentApplication : Application() {
         super.onCreate()
         if (DEBUG) Log.d(TAG, "onCreate")
 
+        HeadsetManager.getInstance(this)
+
         startService(Intent(this, AnyService::class.java))
     }
 
